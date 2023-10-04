@@ -34,3 +34,11 @@ const obj3 = { ...obj1, ...obj2 };
 
 const { email: em } = newUser;
 console.log(em);
+
+const coding = ["js", { java: "newval" }, "php", "python"];
+const val = coding.forEach((item) => {
+  console.log(item.java);
+});
+
+const mynums = [1, 2, 3, 4, 5, 6, 7];
+console.log(mynums.filter((num) => num > 4));
