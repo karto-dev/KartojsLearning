@@ -42,3 +42,4 @@ const val = coding.forEach((item) => {
 
 const mynums = [1, 2, 3, 4, 5, 6, 7];
 console.log(mynums.filter((num) => num > 4));
+
