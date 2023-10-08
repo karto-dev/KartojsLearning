@@ -12,3 +12,13 @@ Start.addEventListener("click", function () {
 Stop.addEventListener("click", function () {
   clearInterval(intervalId);
 });
+let xhr = new XMLHttpRequest();
+xhr.open("GET", "https://randomuser.me/api/");
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4) {
+    console.log(String(xhr.responseText));
+    document.getElementById("para1").innerText = String(xhr.responseText);
+  }
+};
+
+xhr.send();
