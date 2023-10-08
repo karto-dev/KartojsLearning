@@ -13,3 +13,9 @@ buttons.forEach((element) => {
     }
   });
 });
+
+const clock = document.getElementById("clock");
+setInterval(function () {
+  let dat = new Date();
+  clock.innerText = dat.toLocaleString();
+}, 1000);
